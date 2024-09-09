@@ -5,7 +5,11 @@
 import fonctions as f
 
 
-a=int(input("Saisissez un nombre: "))
-b=int(input("Saisissez un second nombre: "))
+a=input("Saisissez un nombre: ")
+b=input("Saisissez un second nombre: ")
 
-print(f.puissance(a,b));
+if not type(a) is int:
+    raise TypeError("Seul les entiers sont autorisés")
+or type(b) is not int:
+    raise TypeError("Seul les entiers sont autorisés")
+else print(f.puissance(a,b));

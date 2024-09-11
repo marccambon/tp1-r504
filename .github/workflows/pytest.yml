@@ -1,0 +1,13 @@
+IUT Rouen - Réseaux & Télécoms - BUT3 version du 6 septembre 2024
+Q4.2 - Editer ce fichier et y copier ce qui suit :
+name: tests unitaires
+on: [push]
+	jobs:
+		build:
+			runs-on: ubuntu-latest
+			steps:
+				- uses: actions/checkout@v3
+				- name: Set up Python for Demo
+					uses: actions/setup-python@v4
+				- name: Run tests
+					run: pytest TP1/test.py

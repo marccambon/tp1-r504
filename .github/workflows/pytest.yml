@@ -12,5 +12,11 @@ jobs:
         run: | 
           pip install pytest
           python3 TP1/test.py
-
-
+job:
+  echoinfo:
+    runs-on: ubuntu-latest
+    steps:
+      run: |
+        echo "Nom branche :${{ github.ref}}"
+        echo "Nom repo :${{ github.repository}}"
+        echo "OS runner :${{runner.os}}"

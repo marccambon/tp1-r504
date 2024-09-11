@@ -4,5 +4,13 @@ def puissance(a,b):
 		b = int(b)
 	except ValueError:
 		raise TypeError("Seul les entiers sont autorisés")   	
-	return a**b
+	
+	valeur=a
+
+	for i in range(1,abs(b)):
+		valeur *=a
+
+	return valeur
+			
+
 

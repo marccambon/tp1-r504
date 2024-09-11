@@ -12,8 +12,6 @@ jobs:
         run: | 
           pip install pytest
           python3 TP1/test.py
-
-jobs:
   echoinfo:
     runs-on: ubuntu-latest
     steps:
